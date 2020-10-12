@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App 🌤</title>
+  </head>
+  <body>
+    <nav>
+      <div id="menu">
+        <img src="icons8-menu-24.png" alt="" class="navButton" />
+      </div>
+    </nav>
+    <div class="container">
+      <form class="city-search" id="city-search-form">
+        <div class="row">
+          <div class="col-12">
+            <input
+              type="search"
+              placeholder="SEARCH CITY"
+              class="form-control"
+              id="city-search-input"
+            />
+          </div>
+          <div class=""></div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-4 current-weather">
+          <h1 id="city">
+            <!-- Dangriga, Belize -->
+          </h1>
+          <ul>
+            <li class="currentDetail">
+              <span id="currentDate"></span>
+            </li>
+            <li class="currentDetail">
+              <span id="currentTime"></span>
+            </li>
+            <li class="currentDetail" id="weatherCondition">
+              <!-- Partly Cloudy -->
+            </li>
+          </ul>
+          <img
+            src="images/thunder-cloud-and-rain_26c8.png"
+            alt="Thunder"
+            width="120px"
+          />
+          <br />
+
+          <span class="temperature" id="current-temperature">19</span>
+          <span class="units">
+            <a href="#" id="fahrenheit-link">°F</a> |
+            <a href="#" id="celsius-link">°C</a></span
+          >
+
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind: <span id="wind"></span>mph</p>
+
+          <div class="container px-lg-2">
+            <div class="row">
+              <div class="col lg-2">
+                <p>High: <span id="temp-High"></span>°</p>
+                <!-- <p>Sunrise: 5:30am</p> -->
+              </div>
+              <div class="col lg-2">
+                <p>Low:<span id="temp-Low"></span>°</p>
+                <!-- <p>Sunset: 8:30pm</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 weekly-forecast">
+          <div class="row row-cols-3">
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Saturday</p>
+                  <img
+                    src="images/thunder-cloud-and-rain_26c8.png"
+                    alt="Thunder"
+                    width="75px"
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  95°F <a href="#" °F></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h6>Coded by Antonette Ortiz</h6>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

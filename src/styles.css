@@ -1,0 +1,151 @@
+body {
+  border: solid 5px #ff7043;
+  border-radius: 10px;
+  margin: 40px;
+  color: #2fbbb0;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.navButton {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 30px;
+}
+
+header .open {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  height: 25px;
+  width: 25px;
+}
+
+#menu {
+  color: #ff7043;
+  font-size: 8px;
+  background-color: #cccccc;
+  padding: 20px 10px;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.5;
+}
+
+#menu .menuItemHeader {
+  color: #2fbbb0;
+  border-bottom: 2px solid white;
+  /* padding: 40px 0; */
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+#menu .menuItem {
+  color: #2fbbb0;
+  /* border-bottom: 2px solid white; */
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+}
+#menu.active {
+  right: 0;
+  top: 0;
+  opacity: 100%;
+}
+#menu.inactive {
+  right: -290px;
+  top: 0;
+  opacity: 0;
+}
+#menu .close {
+  display: block;
+  font-size: 25px;
+  color: white;
+  background: none;
+  border: none;
+  text-align: right;
+  display: block;
+}
+
+.city-search {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 15px;
+  margin-top: 30px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+ul {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 10px;
+  text-transform: capitalize;
+}
+
+.currentDetail {
+  color: #2fbbb0;
+  font-size: 16px;
+  font-weight: 100px;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.weekly-forecast {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  line-height: 10px;
+}
+
+.card {
+  border: solid 1px #ff7043;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+}
+
+.temperature {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+h6 {
+  color: #2fbbb0;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* ::placeholder {
+  text-align: center;
+  color: #ff7043;
+  font-size: 20px;
+} */
+
+/* input {
+  border-color: #ff7043;
+  padding: 12px 30px;
+} */
