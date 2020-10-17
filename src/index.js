@@ -48,11 +48,16 @@ menuListContainer.appendChild(menuItemDangriga);
 menuListContainer.appendChild(menuItemNairobi);
 menuListContainer.appendChild(menuItemWashingtonDC);
 menuListContainer.appendChild(menuItemPhoenix);
+menuListContainer.appendChild(menuItemNewYork);
+
+
 
 // menuItemDangriga = document.querySelector("#dangriga");
 menuItemDangriga.addEventListener("click", () => loading("dangriga"));
-menuItemDangriga.addEventListener("click", () => loading("nairobi"));
-
+menuItemNairobi.addEventListener("click", () => loading("nairobi"));
+menuItemPhoenix.addEventListener("click", () => loading("phoenix"));
+menuItemWashingtonDC.addEventListener("click", () => loading("washington dc"));
+menuItemNewYork.addEventListener("click", () => loading("new york"));
 //Add everything to the Body
 document.body.appendChild(menu);
 
