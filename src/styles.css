@@ -149,3 +149,7 @@ h6 {
   border-color: #ff7043;
   padding: 12px 30px;
 } */
+
+a {
+  text-decoration: none;
+}
